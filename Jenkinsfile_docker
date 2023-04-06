@@ -7,7 +7,7 @@ pipeline{
     stage('GitClone'){
       steps{
         echo "cloning the lastest applications version"
-        git "https://github.com/LandmakTechnology/maven-web-application"
+        git branch: 'mvntest', credentialsId: 'Git_Credentials', url: 'https://github.com/DecoTechnologies/mvn-web-app/'
       }
     }
       stage('Test+Build'){
@@ -17,6 +17,7 @@ pipeline{
         echo "echo test successful and backupArtifacts created"
       }
     }
+    /*
       stage('codeQuality'){
       steps{
         sh "echo Running detail code analysis"
@@ -31,6 +32,7 @@ pipeline{
         sh "echo backupArtifacts in nexus"
       }
     }
+    
       stage('predeployment'){
       steps{
         sh "echo creating docker image"
@@ -58,3 +60,4 @@ pipeline{
 
   }
 }
+*/
