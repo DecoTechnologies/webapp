@@ -6,7 +6,7 @@
 	<artifactId>mvn-webapp</artifactId>
 	<packaging>war</packaging>
 	
-	<version>0.0.2-SNAPSHOT</version> 
+	<version>0.0.1-SNAPSHOT</version> 
 	
 	<name>mvn-webapp</name>
 
@@ -48,7 +48,7 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.0</version>
+			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -87,7 +87,7 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>3.0.0</version>
+			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>	
 	</dependencies>
