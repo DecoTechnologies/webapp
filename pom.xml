@@ -3,12 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<groupId>com.mt</groupId>
-	<artifactId>maven-web-application</artifactId>
+	<artifactId>mvn-webapp</artifactId>
 	<packaging>war</packaging>
 	
 	<version>0.0.2-SNAPSHOT</version> 
 	
-	<name>maven-web-application</name>
+	<name>mvn-webapp</name>
 
 	<description>Maven Web Project for Java Project</description>
 
