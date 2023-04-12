@@ -1,5 +1,5 @@
 pipeline{
-  agent "mvn_slave_agent" 
+  agent any 
   tools {
     maven "maven_3.9.1"
   }  
