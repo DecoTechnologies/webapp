@@ -12,7 +12,7 @@ pipeline{
     }
     stage('4CodeQuality'){
       steps{
-        sh echo "Perfoming CodeQualityAnalysis"
+        sh "echo 'Perfoming CodeQualityAnalysis' "
         sh "mvn sonar:sonar"
       }
     }
