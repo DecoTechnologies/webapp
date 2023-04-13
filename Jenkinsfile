@@ -10,17 +10,17 @@ pipeline{
         git credentialsId: 'git-credentials', url: 'https://github.com/DecoTechnologies/webapp.git'
       }
     }
+    stage('4CodeQuality'){
+      steps{
+        sh echo "Perfoming CodeQualityAnalysis"
+        sh "mvn sonar:sonar"
+      }
+    }
     stage('3Test+Build'){
       steps{
         sh "echo 'running JUnit-test-cases' "
         sh "echo 'testing must passed to create artifacts ' "
         sh "mvn clean package"
-      }
-    }
-    stage('4CodeQuality'){
-      steps{
-        sh "echo 'Perfoming CodeQualityAnalysis' "
-        sh "mvn sonar:sonar"
       }
     }
     stage('5uploadNexus'){
