@@ -23,7 +23,7 @@ pipeline{
         sh "mvn clean package"
       }
     }
-    stage('5uploadNexus'){
+    stage('5UploadNexus'){
       steps{
         sh "mvn deploy"
       }
